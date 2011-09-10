@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+body {
+  margin: 0;
+}
+
+#menu {
+  /* required */
+  position: fixed;
+  top: 0;
+
+  /* optional */
+  background: #000;
+  color: #fff;
+  padding: 1em;
+  line-height: 2em;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+p {
+  /* make the page longer */
+  width: 10%;
+  margin: 5em 1em;
+}
+</style>
+</head>
+<body>
+<nav id="menu">
+menu bar is shown immediately when the page is scrolled up.
+</nav>
+<article>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec facilisis metus. Suspendisse ante odio, pretium nec elementum eget, ornare et arcu. Nunc lacus metus, cursus at malesuada in, porta nec quam. Nam in neque ante, id volutpat nunc. Maecenas tempor augue tincidunt nisl ultricies fringilla. Suspendisse dapibus, magna a euismod dapibus, sapien lectus tristique purus, sit amet pharetra dolor enim sed mauris. Vivamus rutrum pretium nisl a placerat. Praesent eleifend orci ut risus mattis aliquet. Sed sed lectus eros. Vestibulum quis urna sit amet est luctus dignissim ac non arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vel leo dapibus massa suscipit fermentum. Nam eleifend lobortis urna, vel faucibus arcu vestibulum nec. Integer magna lorem, viverra in auctor ut, pretium nec lacus. Sed feugiat euismod ligula, non placerat leo sollicitudin in.  Proin magna lorem, cursus id scelerisque nec, pharetra in felis. Fusce sollicitudin diam sit amet sem euismod vel porta libero dapibus. Mauris tortor dolor, blandit et tristique non, iaculis vel dolor. Donec tincidunt molestie tortor ut elementum. Etiam in malesuada augue. Vestibulum ut dolor et felis elementum ornare vitae id sem. Aliquam pulvinar dignissim aliquet. Donec eu velit non neque tincidunt porta. Sed bibendum, metus sed malesuada ullamcorper, sem libero vestibulum mauris, id dapibus risus risus a libero. Integer in erat massa. Sed pretium justo a tellus porta sollicitudin euismod lectus auctor. Etiam eu ligula tristique eros varius placerat. Donec eget felis erat. Aliquam commodo eros non felis tempor luctus.  Curabitur eros leo, varius tincidunt cursus quis, accumsan in sapien. Donec auctor arcu quis ante rhoncus rhoncus. Cras diam enim, feugiat nec interdum quis, laoreet iaculis ipsum. Etiam egestas rhoncus odio, sed rhoncus massa aliquam eu. Curabitur nec urna eros, quis suscipit lacus. Nullam posuere ultrices rhoncus. Ut dapibus bibendum volutpat. Praesent ac metus non quam venenatis semper. Nam vel felis sed ante egestas pharetra vitae vel enim. Mauris sagittis condimentum odio, ac laoreet velit molestie quis. Fusce felis ligula, dapibus accumsan ornare quis, dignissim ut quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  Curabitur vestibulum nulla venenatis libero vestibulum rhoncus. Curabitur quam lacus, accumsan pharetra vestibulum et, dictum semper leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec lacinia bibendum ultrices. Proin et sapien in nibh venenatis tincidunt. In ut urna magna. Quisque sed nulla lorem, at dictum nulla.  </p>
+</article>
+<script src="http://code.jquery.com/jquery-1.6.3.min.js"/></script>
+<script src="js/menu_on_scroll_up.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#menu").menu_on_scroll_up();
+  });
+</script>
+</body>
+</html>
+
